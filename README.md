@@ -1,5 +1,5 @@
 # Bass & Buns 
 
-To run de page execute ```npm run dev```
+To run the page execute ```npm run dev```
 
 
