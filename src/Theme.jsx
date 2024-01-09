@@ -1,19 +1,33 @@
 import { createTheme } from '@mui/material/styles';;
 
 const Theme = createTheme({
+  typography: {
+    dosis: {
+      fontFamily: "'Dosis', sans-serif",
+      fontWeightBold: 300
+    },
+    bebas: {
+      fontFamily: "'Bebas Neue', sans-serif",
+      fontWeightBold: 500
+    },
+    satisfy: {
+      fontFamily: "'Satisfy', cursive",
+      fontWeightBold: 500
+    }
+  },
   palette: {
     primary: {
       main: '#FAF3E3', // white bone
     },
     white: {
-        main: '#FAF6F0'
+      main: '#FAF6F0'
     },
     background: {
       default: '#1a1a1a', // Gris oscuro casi negro
     },
-  },
-  typography: {
-    fontWeightBold: 700, // Agrega esta línea para definir fontWeightBold
+    orange: {
+      main: '#ff8103b2'
+    }
   },
   components: {
     MuiAppBar: {

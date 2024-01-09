@@ -1,0 +1,15 @@
+.link-route {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.link-route-mobile {
+    color: #1A1C20;
+    text-decoration: none;
+}
+
+.link-route:hover {
+    background-color: #ff8103b2;
+    border-radius: 8px;
+}
+

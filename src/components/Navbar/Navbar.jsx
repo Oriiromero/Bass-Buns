@@ -10,7 +10,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from "react-router-dom";
+import './Navbar.css';
 
 
 const pages = ['Home', 'Menu', 'About', 'Contact'];
@@ -30,12 +31,11 @@ const Navbar = () => {
 
     return (
         <AppBar position="static">
-            <Container maxWidth="xl" style={{padding: '0'}}>
+            <Container maxWidth="xl" style={{ padding: '0' }}>
                 <Toolbar disableGutters>
                     <Box sx={{ display: { xs: 'none', md: 'flex' }, width: '100px' }} >
-                        <img src='/images/logo.png' alt='logo' style={{width: '100%'}}/>
-                    </Box> {/*cambiar por img */}
-
+                        <img src='/images/logo.png' alt='logo' style={{ width: '100%' }} />
+                    </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -65,27 +65,69 @@ const Navbar = () => {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <Link to='/' className='link-route-mobile'>
+                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.dosis, fontWeight: '700'}}>Home</Typography>
+                                    </Link>
                                 </MenuItem>
-                            ))}
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <Link to='/menu' className='link-route-mobile'>
+                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.dosis, fontWeight: '700'}}>Menu</Typography>
+                                    </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <Link to='/about-us' className='link-route-mobile'>
+                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.dosis, fontWeight: '700'}}>About</Typography>
+                                    </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <Link to='/contact' className='link-route-mobile'>
+                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.dosis, fontWeight: '700'}}>Contact</Typography>
+                                    </Link>
+                                </MenuItem>
                         </Menu>
                     </Box>
                     {/*VISTA MOVIL?*/}
-                    <Box sx={{ display: { xs: 'flex', md: 'none' }, width: '100px' }}>
-                        <img src="/images/logo.png" alt="logo" style={{width: '100%'}}/>
-                    </Box>{/*cambiar por img */}
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
-                        {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block', marginLeft: '25px', marginRight: '25px' }}
-                            >
-                                {page}
-                            </Button>
-                        ))}
+                    <Box sx={{ display: { xs: 'flex', md: 'none' }, width: '100px'}}>
+                            <img src="/images/logo.png" alt="logo" style={{ width: '100%'}} />
+                    </Box>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', marginRight: '30px'}}>
+                            <Link to='/' className='link-route'>
+                                <Typography
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.dosis, fontWeight: '700' }}
+                                    className='menu-link'
+                                >
+                                    Home
+                                </Typography>
+                            </Link>
+                            <Link to='/menu' className='link-route'>
+                                <Typography
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.dosis, fontWeight: '700' }}
+                                    className='menu-link'
+                                >
+                                    Menu
+                                </Typography>
+                            </Link>
+                            <Link to='/about-us' className='link-route'>
+                                <Typography
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.dosis, fontWeight: '700'}}
+                                    className='menu-link'
+                                >
+                                    About
+                                </Typography>
+                            </Link>
+                            <Link to='/contact' className='link-route'>
+                                <Typography
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.dosis, fontWeight: '700' }}
+                                    className='menu-link'
+                                >
+                                    Contact
+                                </Typography>
+                            </Link>
                     </Box>
 
                 </Toolbar>
