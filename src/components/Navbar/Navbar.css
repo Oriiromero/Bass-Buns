@@ -9,7 +9,8 @@
 }
 
 .link-route:hover {
-    background-color: #ff8103b2;
+    background-color: #ff9f29d5;
     border-radius: 8px;
+    transition: 0.8s ease;
 }
 

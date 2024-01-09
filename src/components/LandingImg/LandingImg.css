@@ -1,0 +1,34 @@
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.landing-container {
+    position: absolute;
+    bottom: 12%;
+    right: 6%;
+    text-align: center;
+}
+
+.landing-title {
+    color: white;
+    font-size: 6rem;
+    font-family: 'Satisfy', cursive;
+}
+
+.landing-subtitle {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: lighter;
+    position: relative;
+    bottom: 28px;
+}

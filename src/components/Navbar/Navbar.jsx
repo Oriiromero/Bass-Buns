@@ -67,22 +67,22 @@ const Navbar = () => {
                         >
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <Link to='/' className='link-route-mobile'>
-                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.dosis, fontWeight: '700'}}>Home</Typography>
+                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.bebas, fontWeight: '400'}}>Home</Typography>
                                     </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <Link to='/menu' className='link-route-mobile'>
-                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.dosis, fontWeight: '700'}}>Menu</Typography>
+                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.bebas, fontWeight: '400'}}>Menu</Typography>
                                     </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <Link to='/about-us' className='link-route-mobile'>
-                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.dosis, fontWeight: '700'}}>About</Typography>
+                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.bebas, fontWeight: '400'}}>About</Typography>
                                     </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <Link to='/contact' className='link-route-mobile'>
-                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.dosis, fontWeight: '700'}}>Contact</Typography>
+                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.bebas, fontWeight: '400'}}>Contact</Typography>
                                     </Link>
                                 </MenuItem>
                         </Menu>
@@ -95,7 +95,7 @@ const Navbar = () => {
                             <Link to='/' className='link-route'>
                                 <Typography
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.dosis, fontWeight: '700' }}
+                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
                                     className='menu-link'
                                 >
                                     Home
@@ -104,7 +104,7 @@ const Navbar = () => {
                             <Link to='/menu' className='link-route'>
                                 <Typography
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.dosis, fontWeight: '700' }}
+                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
                                     className='menu-link'
                                 >
                                     Menu
@@ -113,7 +113,7 @@ const Navbar = () => {
                             <Link to='/about-us' className='link-route'>
                                 <Typography
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.dosis, fontWeight: '700'}}
+                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px'}}
                                     className='menu-link'
                                 >
                                     About
@@ -122,7 +122,7 @@ const Navbar = () => {
                             <Link to='/contact' className='link-route'>
                                 <Typography
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.dosis, fontWeight: '700' }}
+                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
                                     className='menu-link'
                                 >
                                     Contact
