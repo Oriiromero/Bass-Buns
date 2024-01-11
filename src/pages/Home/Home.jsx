@@ -7,6 +7,7 @@ import landing3 from '/images/landing3.jpg';
 import LandingImg from '../../components/LandingImg/LandingImg';
 import Slider from '../../components/Slider/Slider';
 import MenuButton from '../../components/MenuButton/MenuButton';
+import transition from '../../transition';
 
 const Home = () => {
 
@@ -26,4 +27,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default transition(Home);

@@ -1,4 +1,5 @@
 import React from 'react'
+import transition from '../../transition';
 
 const Menu = () => {
   return (
@@ -6,4 +7,4 @@ const Menu = () => {
   )
 }
 
-export default Menu;
+export default transition(Menu);

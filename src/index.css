@@ -3,3 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.slide-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #c07922;
+    transform-origin: bottom;
+}
+
+.slide-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #c07922;
+    transform-origin: top;
+}

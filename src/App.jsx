@@ -1,28 +1,30 @@
 import { ThemeProvider } from '@mui/material/styles';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from './pages/Home/Home';
 import Menu from './pages/Menu/Menu';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import Layout from './components/Layout/Layout';
+import NavBar from './components/Navbar/Navbar';
+// import Layout from './components/Layout/Layout';
 import Theme from './Theme';
+import { AnimatePresence } from 'framer-motion';
 // import './App.css';
 
 function App() {
+  const location = useLocation();
 
   return (
     <ThemeProvider theme={Theme}>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path='menu' element={<Menu />} />
-            <Route path='about-us' element={<About />} />
-            <Route path='contact' element={<Contact />} />
-          </Route>
+      <AnimatePresence initial={false} mode='wait'>
+        <NavBar />
+        <Routes location={location} key={location.pathname}>
+          <Route index element={<Home />} />
+          <Route path='menu' element={<Menu />} />
+          <Route path='about-us' element={<About />} />
+          <Route path='contact' element={<Contact />} />
           {/* <Route path="*" element={<NoPage />} /> 404 page  */}
         </Routes>
-      </BrowserRouter>
+      </AnimatePresence>
     </ThemeProvider>
   )
 }
