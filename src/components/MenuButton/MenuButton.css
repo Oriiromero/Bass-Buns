@@ -1,0 +1,45 @@
+.button-container {
+    display: flex;
+    width: 100%;
+    height: 35vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.button__title {
+    color: #FF9F29;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.button__subtitle {
+    color: #EEEEEE;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.button__btn {
+    width: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FF9F29;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #FF9F29;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button__btn:hover {
+    color: #000000;
+    background-color: #FF9F29;
+    border: none;
+    box-shadow: 0 0 5px 5px #FF9F29;
+    transition: 1s ease;
+}
