@@ -8,6 +8,8 @@ import LandingImg from '../../components/LandingImg/LandingImg';
 import Slider from '../../components/Slider/Slider';
 import MenuButton from '../../components/MenuButton/MenuButton';
 import transition from '../../transition';
+import Footer from '../../components/Footer/Footer';
+
 
 const Home = () => {
 
@@ -22,7 +24,7 @@ const Home = () => {
       <div className='menu-btn_container'>
         <MenuButton title={'Rock Your Taste Buds!'} subtitle={'Dive into our menu of rockin’ burgers. Hit the button below and let the feast begin!'} route={'menu'}/>
       </div>
-      
+      <Footer />      
     </div>
   )
 }

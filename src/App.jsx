@@ -16,8 +16,8 @@ function App() {
 
   return (
     <ThemeProvider theme={Theme}>
+      <NavBar />
       <AnimatePresence initial={false} mode='wait'>
-        <NavBar />
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
           <Route path='menu' element={<Menu />} />
@@ -25,7 +25,6 @@ function App() {
           <Route path='contact' element={<Contact />} />
           {/* <Route path="*" element={<NoPage />} /> 404 page  */}
         </Routes>
-        <Footer />
       </AnimatePresence>
     </ThemeProvider>
   )
