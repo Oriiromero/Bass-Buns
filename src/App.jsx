@@ -8,6 +8,7 @@ import NavBar from './components/Navbar/Navbar';
 // import Layout from './components/Layout/Layout';
 import Theme from './Theme';
 import { AnimatePresence } from 'framer-motion';
+import Footer from './components/Footer/Footer';
 // import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='contact' element={<Contact />} />
           {/* <Route path="*" element={<NoPage />} /> 404 page  */}
         </Routes>
+        <Footer />
       </AnimatePresence>
     </ThemeProvider>
   )
