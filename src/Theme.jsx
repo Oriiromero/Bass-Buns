@@ -26,7 +26,8 @@ const Theme = createTheme({
       default: '#1a1a1a', // Gris oscuro casi negro
     },
     orange: {
-      main: '#ff8103b2'
+      main: '#ff8103b2',
+      principal: '#FF9F29'
     }
   },
   components: {

@@ -3,7 +3,15 @@ import transition from '../../transition';
 
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <div className='menu'>
+      {/* SLIDER DE IMAGENES */}
+
+      {/*  MENU TITULO */}
+
+      {/* SECCIONES DEL MENU ENTRANTE/HAMBURGESAS Y ENSALADAS/POSTRES */}
+
+      {/* FOOTER */}
+    </div>
   )
 }
 

@@ -1,0 +1,27 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 150px;
+    right: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.scroll-to-top-button.visible {
+    opacity: 1;
+}
+
+.scroll__btn {
+    background-color: #ff9f298e;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 800px){
+    .scroll-to-top-button {
+        bottom: 200px;
+        right: 10px;
+    }
+}

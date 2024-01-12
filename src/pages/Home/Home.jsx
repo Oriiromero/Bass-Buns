@@ -9,6 +9,7 @@ import Slider from '../../components/Slider/Slider';
 import MenuButton from '../../components/MenuButton/MenuButton';
 import transition from '../../transition';
 import Footer from '../../components/Footer/Footer';
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
 
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
       <div className='menu-btn_container'>
         <MenuButton title={'Rock Your Taste Buds!'} subtitle={'Dive into our menu of rockin’ burgers. Hit the button below and let the feast begin!'} route={'menu'}/>
       </div>
+      <ScrollButton />
       <Footer />      
     </div>
   )
