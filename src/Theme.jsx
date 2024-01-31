@@ -28,6 +28,9 @@ const Theme = createTheme({
     orange: {
       main: '#ff8103b2',
       principal: '#FF9F29'
+    },
+    secondary: {
+      main: '#FF9F29',
     }
   },
   components: {

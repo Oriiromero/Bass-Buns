@@ -7,6 +7,9 @@ import veg2 from '/images/veg2.jpg';
 import chicken1 from '/images/chicken1.jpg';
 import burger2 from '/images/burger2.jpg';
 import Divider from '../../components/Divider/Divider';
+import Footer from '../../components/Footer/Footer';
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
+import MenuList from '../../components/MenuList/MenuList';
 
 const images = [{id: 0 , url: veg2},{id: 1 , url: chicken1},{id: 2 , url: burger2}]
 const dividerTitle = 'Menu';
@@ -21,8 +24,10 @@ const Menu = () => {
       {/*  MENU TITULO */}
         <Divider title={dividerTitle}/>
       {/* SECCIONES DEL MENU ENTRANTE/HAMBURGESAS Y ENSALADAS/POSTRES */}
-
+        <MenuList />
       {/* FOOTER */}
+      <ScrollButton />
+      <Footer /> 
     </div>
   )
 }
