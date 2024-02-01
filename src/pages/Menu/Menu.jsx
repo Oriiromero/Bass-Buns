@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box } from '@mui/material';
 import transition from '../../transition';
 import ImagesSlider from '../../components/ImagesSlider/ImagesSlider';
@@ -10,11 +10,18 @@ import Divider from '../../components/Divider/Divider';
 import Footer from '../../components/Footer/Footer';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import MenuList from '../../components/MenuList/MenuList';
+import { useLocation } from 'react-router-dom';
 
 const images = [{ id: 0, url: veg2 }, { id: 1, url: chicken1 }, { id: 2, url: burger2 }]
 const dividerTitle = 'Menu';
 
 const Menu = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
       <div className='menu'>
