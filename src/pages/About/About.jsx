@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <Container className='about-container' sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around'}}>
-        <Box className='about-story' sx={{margin: '0', padding: '0', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <Box className='about-story' sx={{marginBottom: '35px', padding: '0', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <h2 className='about-title'>Our history</h2>
           <h4 className='about-subtitle'>Work while listening to the best rock bands and be the bests at it!</h4>
           <p className='about-p'>The journey wasn't easy, but the beautiful people who embraced our space made it worthwhile. Our walls echo the rock spirit with signed memorabilia from renowned musicians.</p>
