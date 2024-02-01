@@ -11,24 +11,30 @@ import Footer from '../../components/Footer/Footer';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import MenuList from '../../components/MenuList/MenuList';
 
-const images = [{id: 0 , url: veg2},{id: 1 , url: chicken1},{id: 2 , url: burger2}]
+const images = [{ id: 0, url: veg2 }, { id: 1, url: chicken1 }, { id: 2, url: burger2 }]
 const dividerTitle = 'Menu';
 
 const Menu = () => {
   return (
-    <div className='menu'>
-      {/* SLIDER DE IMAGENES */}
-      <Box className='carousel-container'>
-        <ImagesSlider images={images}/>
-      </Box>
-      {/*  MENU TITULO */}
-        <Divider title={dividerTitle}/>
-      {/* SECCIONES DEL MENU ENTRANTE/HAMBURGESAS Y ENSALADAS/POSTRES */}
+    <>
+      <div className='menu'>
+        {/* SLIDER DE IMAGENES */}
+        <Box className='carousel-container'>
+          <ImagesSlider images={images} />
+        </Box>
+        {/*  MENU TITULO */}
+        <Divider title={dividerTitle} />
+        {/* SECCIONES DEL MENU ENTRANTE/HAMBURGESAS Y ENSALADAS/POSTRES */}
         <MenuList />
+      </div>
       {/* FOOTER */}
-      <ScrollButton />
-      <Footer /> 
-    </div>
+      <Box className='menu-bottom'>
+        <ScrollButton />
+        <Footer />
+      </Box>
+
+    </>
+
   )
 }
 

@@ -9,7 +9,6 @@ import NavBar from './components/Navbar/Navbar';
 import Theme from './Theme';
 import { AnimatePresence } from 'framer-motion';
 import Footer from './components/Footer/Footer';
-// import './App.css';
 
 function App() {
   const location = useLocation();

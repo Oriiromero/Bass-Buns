@@ -12,10 +12,12 @@ const MenuItem = ({ dishes }) => {
                 <div key={dish.id} className='dishes__content'>
                     <div className='dishes_info'>
                         <h1 className='dishes__title'>{dish.name}</h1>
-                        <p className='dishes__ingredients'>{dish.ingredients}</p>
                         <p className='dishes__price'>${dish.price}</p>
-                        {dish.spicy ? <img src={chili} alt='spicy' className='spice-icon' /> : ''}
-                        {dish.veggie ? <img src={carrot} alt='veg' className='veg-icon' /> : ''}
+                        <p className='dishes__ingredients'>{dish.ingredients}</p>
+                        <div className='icons-container'>
+                            {dish.spicy ? <img src={chili} alt='spicy' className='spice-icon' /> : ''}
+                            {dish.veggie ? <img src={carrot} alt='veg' className='veg-icon' /> : ''}
+                        </div>
                     </div>
                     <div className='dishes__img'>
                         <img src={dish.image} alt='dish' className='dishes_image' />

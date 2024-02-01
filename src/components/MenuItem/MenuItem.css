@@ -1,22 +1,16 @@
 .dishes_container {
-    width: 100%;
-    max-height: 70vh;
+    width: 80%;
+    max-height: 90vh;
     overflow-y: auto;
-}
-
-.dishes {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-
-    opacity: 0;
-    transform: scale(85%);
-    transition: 2s;
+    margin-left: 9%;
+    scrollbar-width: thin;
+    scrollbar-color: #ff9f2948 #1a1a1a;
 }
 
 .dishes_image {
-    width: 70%;
+    width: 50%;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .dishes__content {
@@ -36,6 +30,12 @@
     width: 50%;
 }
 
+.dishes_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .dishes__title {
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
@@ -48,6 +48,7 @@
     font-size: 1.1rem;
     color: #EEEEEE;
     margin: 10px;
+    width: 210px;
 }
 
 .dishes__price {
@@ -63,11 +64,30 @@
 }
 
 @media screen and (max-width: 800px) {
-    .dishes {
-        flex-direction: column;
+    .dishes__content {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
     .dishes_image {
         width: 100%;
+        object-fit: cover;
+    }
+
+    .dishes__title {
+        font-size: 2rem;
+    }
+
+    .dishes__ingredients {
+        font-size: 1rem;
+    }
+
+    .dishes__price {
+        font-size: 1.6rem;
+    }
+
+    .spice-icon,
+    .veg-icon {
+        width: 5ch;
     }
 }

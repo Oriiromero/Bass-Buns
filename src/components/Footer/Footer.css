@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     padding: 40px;
-    background-color: #1a1a1a;
 }
 
 .footer::before {
@@ -25,7 +24,6 @@
 
 .content {
     position: relative;
-    /* z-index: 1; */
     max-width: 1000px;
     text-align: center;
     display: flex;
