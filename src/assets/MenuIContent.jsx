@@ -28,7 +28,7 @@ const burgers = [
     },
     {
         name: 'The no-moo',
-        ingredients: 'vegan burger buns, soy based burger, vegan cheddar cheese, spicy guacamole',
+        ingredients: 'Vegan burger buns, soy based burger, vegan cheddar cheese, spicy guacamole',
         spicy: true,
         veggie: true,
         price: 14.90,
@@ -36,7 +36,7 @@ const burgers = [
     },
     {
         name: 'Beyond insanity',
-        ingredients: 'vegan burger buns, beyond meat burger, tomato, lettuce, fresh cucumber, vegan mayo',
+        ingredients: 'Vegan burger buns, beyond meat burger, tomato, lettuce, fresh cucumber, vegan mayo',
         spicy: false,
         veggie: true,
         price: 13,
@@ -44,7 +44,7 @@ const burgers = [
     },
     {
         name: 'Special salad',
-        ingredients: 'lettuce, tomatoes, hazenults, feta cheese, parsley',
+        ingredients: 'Lettuce, tomatoes, hazenults, feta cheese, parsley',
         spicy: false,
         veggie: true,
         price: 8.90,
@@ -52,7 +52,7 @@ const burgers = [
     },
     {
         name: 'Rib by rib',
-        ingredients: 'pork ribs, bbq sauce',
+        ingredients: 'Pork ribs, bbq sauce',
         spicy: false,
         veggie: false,
         price: 15.90,
@@ -71,7 +71,7 @@ const starters = [
     },
     {
         name: 'Onion rings',
-        ingredients: 'Onion',
+        ingredients: 'Onions',
         spicy: false,
         veggie: true,
         price: 10.80,

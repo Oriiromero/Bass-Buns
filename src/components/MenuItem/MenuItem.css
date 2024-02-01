@@ -11,6 +11,7 @@
     width: 50%;
     border-radius: 5px;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .dishes__content {
@@ -61,6 +62,7 @@
 .spice-icon,
 .veg-icon {
     width: 70px;
+    pointer-events: none
 }
 
 @media screen and (max-width: 800px) {
