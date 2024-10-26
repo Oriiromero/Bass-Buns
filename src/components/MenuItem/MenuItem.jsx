@@ -19,7 +19,7 @@ const MenuItem = ({ dishes }) => {
                             {dish.veggie ? <img src={carrot} alt='veg' className='veg-icon' /> : ''}
                         </div>
                     </div>
-                    <div className='dishes__img'>
+                    <div className='dishes__img' key={dish.id}>
                         <img src={dish.image} alt='dish' className='dishes_image' />
                     </div>
                 </div>

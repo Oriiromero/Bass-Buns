@@ -11,6 +11,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './Navbar.css';
 
 
@@ -20,6 +21,7 @@ const Navbar = () => {
 
     const theme = useTheme();
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const navigate = useNavigate();
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -33,8 +35,11 @@ const Navbar = () => {
         <AppBar position="static">
             <Container maxWidth="xl" style={{ padding: '0' }}>
                 <Toolbar disableGutters>
-                    <Box sx={{ display: { xs: 'none', md: 'flex' }, width: '100px' }} >
-                        <img src='/images/logo.png' alt='logo' style={{ width: '100%' }} />
+                    <Box sx={{ display: { xs: 'none', md: 'flex' }, width: '100px' }}
+                        onClick={() => navigate('/')}
+                    >
+                        <img src='/images/logo.png' alt='logo' style={{ width: '100%' }}
+                        />
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -65,69 +70,69 @@ const Navbar = () => {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                                <MenuItem onClick={handleCloseNavMenu}>
-                                    <Link to='/' className='link-route-mobile'>
-                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.bebas, fontWeight: '400'}}>Home</Typography>
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleCloseNavMenu}>
-                                    <Link to='/menu' className='link-route-mobile'>
-                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.bebas, fontWeight: '400'}}>Menu</Typography>
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleCloseNavMenu}>
-                                    <Link to='/about-us' className='link-route-mobile'>
-                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.bebas, fontWeight: '400'}}>About</Typography>
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleCloseNavMenu}>
-                                    <Link to='/contact' className='link-route-mobile'>
-                                        <Typography textAlign="center" sx={{fontFamily: theme.typography.bebas, fontWeight: '400'}}>Contact</Typography>
-                                    </Link>
-                                </MenuItem>
+                            <MenuItem onClick={handleCloseNavMenu}>
+                                <Link to='/' className='link-route-mobile'>
+                                    <Typography textAlign="center" sx={{ fontFamily: theme.typography.bebas, fontWeight: '400' }}>Home</Typography>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem onClick={handleCloseNavMenu}>
+                                <Link to='/menu' className='link-route-mobile'>
+                                    <Typography textAlign="center" sx={{ fontFamily: theme.typography.bebas, fontWeight: '400' }}>Menu</Typography>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem onClick={handleCloseNavMenu}>
+                                <Link to='/about-us' className='link-route-mobile'>
+                                    <Typography textAlign="center" sx={{ fontFamily: theme.typography.bebas, fontWeight: '400' }}>About</Typography>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem onClick={handleCloseNavMenu}>
+                                <Link to='/contact' className='link-route-mobile'>
+                                    <Typography textAlign="center" sx={{ fontFamily: theme.typography.bebas, fontWeight: '400' }}>Contact</Typography>
+                                </Link>
+                            </MenuItem>
                         </Menu>
                     </Box>
                     {/*VISTA MOVIL?*/}
-                    <Box sx={{ display: { xs: 'flex', md: 'none' }, width: '100px'}}>
-                            <img src="/images/logo.png" alt="logo" style={{ width: '100%'}} />
+                    <Box sx={{ display: { xs: 'flex', md: 'none' }, width: '100px' }}>
+                        <img src="/images/logo.png" alt="logo" style={{ width: '100%' }} />
                     </Box>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', marginRight: '30px'}}>
-                            <Link to='/' className='link-route'>
-                                <Typography
-                                    onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
-                                    className='menu-link'
-                                >
-                                    Home
-                                </Typography>
-                            </Link>
-                            <Link to='/menu' className='link-route'>
-                                <Typography
-                                    onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
-                                    className='menu-link'
-                                >
-                                    Menu
-                                </Typography>
-                            </Link>
-                            <Link to='/about-us' className='link-route'>
-                                <Typography
-                                    onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px'}}
-                                    className='menu-link'
-                                >
-                                    About
-                                </Typography>
-                            </Link>
-                            <Link to='/contact' className='link-route'>
-                                <Typography
-                                    onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
-                                    className='menu-link'
-                                >
-                                    Contact
-                                </Typography>
-                            </Link>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', marginRight: '30px' }}>
+                        <Link to='/' className='link-route'>
+                            <Typography
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
+                                className='menu-link'
+                            >
+                                Home
+                            </Typography>
+                        </Link>
+                        <Link to='/menu' className='link-route'>
+                            <Typography
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
+                                className='menu-link'
+                            >
+                                Menu
+                            </Typography>
+                        </Link>
+                        <Link to='/about-us' className='link-route'>
+                            <Typography
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
+                                className='menu-link'
+                            >
+                                About
+                            </Typography>
+                        </Link>
+                        <Link to='/contact' className='link-route'>
+                            <Typography
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, display: 'block', marginLeft: '25px', marginRight: '25px', fontFamily: theme.typography.bebas, fontWeight: '300', fontSize: '18px' }}
+                                className='menu-link'
+                            >
+                                Contact
+                            </Typography>
+                        </Link>
                     </Box>
 
                 </Toolbar>

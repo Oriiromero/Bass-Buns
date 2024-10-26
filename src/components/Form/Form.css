@@ -28,7 +28,6 @@
     border-bottom: 1px #EEEEEE solid;
     resize: none;
     color: #EEEEEE;
-    
 }
 
 .contact-main_form__textarea {
@@ -43,6 +42,11 @@
     color: #eeeeee94;
     font-family: 'Dosis', sans-serif;
     letter-spacing: 1.5px;
+}
+
+.contact-main_form__input::-webkit-outer-spin-button,
+.contact-main_form__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 
