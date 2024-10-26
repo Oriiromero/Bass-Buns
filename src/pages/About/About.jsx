@@ -4,8 +4,8 @@ import Container from '@mui/material/Container';
 import './About.css';
 import Box from '@mui/material/Box';
 import Footer from '../../components/Footer/Footer';
-import ScrollButton from '../../components/ScrollButton/ScrollButton';
-import MenuButton from '../../components/MenuButton/MenuButton';
+import MenuButton from '../../Buttons/MenuButton/MenuButton';
+import ScrollButton from '../../Buttons/ScrollButton/ScrollButton';
 
 const About = () => {
   return (

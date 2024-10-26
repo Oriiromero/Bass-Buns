@@ -10,7 +10,7 @@ const MenuItem = ({ dishes }) => {
         <div className='dishes_container'>
             {dishes.map((dish) => (
                 <div key={dish.id} className='dishes__content'>
-                    <div className='dishes_info'>
+                    <div className='dishes_info' key={dish.id}>
                         <h1 className='dishes__title'>{dish.name}</h1>
                         <p className='dishes__price'>${dish.price}</p>
                         <p className='dishes__ingredients'>{dish.ingredients}</p>

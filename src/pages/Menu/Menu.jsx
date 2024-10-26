@@ -8,9 +8,9 @@ import chicken1 from '/images/chicken1.jpg';
 import burger2 from '/images/burger2.jpg';
 import Divider from '../../components/Divider/Divider';
 import Footer from '../../components/Footer/Footer';
-import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import MenuList from '../../components/MenuList/MenuList';
 import { useLocation } from 'react-router-dom';
+import ScrollButton from '../../Buttons/ScrollButton/ScrollButton';
 
 const images = [{ id: 0, url: veg2 }, { id: 1, url: chicken1 }, { id: 2, url: burger2 }]
 const dividerTitle = 'Menu';

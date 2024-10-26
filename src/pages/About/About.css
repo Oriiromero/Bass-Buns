@@ -34,11 +34,7 @@
         height: auto;
         margin: 35px 0;
     }
-
-    .about-story {
-        padding-bottom: 25px;
-    }
-
+    
     .about-title {
         font-size: 1.2rem;
     }
@@ -50,7 +46,7 @@
     }
 
     .menu-btn_container {
-        padding: 35px 0;
+        padding: 0;
     }
 }
 

@@ -6,10 +6,11 @@ import landing2 from '/images/landing2.jpg';
 import landing3 from '/images/landing3.jpg';
 import LandingImg from '../../components/LandingImg/LandingImg';
 import Slider from '../../components/Slider/Slider';
-import MenuButton from '../../components/MenuButton/MenuButton';
 import transition from '../../transition';
 import Footer from '../../components/Footer/Footer';
-import ScrollButton from '../../components/ScrollButton/ScrollButton';
+import ScrollButton from '../../Buttons/ScrollButton/ScrollButton';
+import MenuButton from '../../Buttons/MenuButton/MenuButton';
+
 
 
 const Home = () => {
