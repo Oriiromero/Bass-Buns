@@ -74,7 +74,6 @@ const Form = () => {
                         <input
                             className="contact-main_form__input"
                             type="number"
-                            max="10"
                             placeholder="Your phone..."
                             {...register("phone", { required: false })}
                         />
